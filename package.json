@@ -16,5 +16,5 @@
     "vuepress": "2.0.0-rc.13",
     "vuepress-theme-hope": "2.0.0-rc.48"
   },
-  "packageManager": "pnpm@8.7.6+sha512.649fcba43cbe20662908f628d8835f9f0d8ca2950e4c74371dc9e16e24aa54bb55e6b4e6b2b6c51dee22df92132e9720bc85a9b566f351367c79f0d85d6a457b"
+  "packageManager": "pnpm@9.3.0+sha512.ee7b93e0c2bd11409c6424f92b866f31d3ea1bef5fbe47d3c7500cdc3c9668833d2e55681ad66df5b640c61fa9dc25d546efa54d76d7f8bf54b13614ac293631"
 }
