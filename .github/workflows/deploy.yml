@@ -52,7 +52,7 @@ jobs:
         with:
           accessKeyId: ${{ secrets.ACCESS_KEY_ID }}
           accessKeySecret: ${{ secrets.ACCESS_KEY_SECRET }}
-          bucket: "doublew2w-myblogimages"
+          bucket: doublew2w-myblogimages
           # use your own endpoint
-          endpoint: "oss-cn-hangzhou.aliyuncs.com"
-          folder: "src/.vuepress/dist"
+          endpoint: oss-cn-hangzhou.aliyuncs.com
+          folder: src/.vuepress/dist
