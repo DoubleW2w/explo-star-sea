@@ -11,6 +11,8 @@ permissions:
 jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
+    env:
+      FTP_HOST: ${{ secrets.ftp_host }}
     environment: master
     steps:
       - name: Checkout
@@ -49,7 +51,7 @@ jobs:
           folder: src/.vuepress/dist
 
       - name: 📂FTP同步文件
-        if: ${{ secrets.ftp_host }} != ''
+        if: env.FTP_HOST != ''
         uses: SamKirkland/FTP-Deploy-Action@4.3.5
         with:
           server: ${{ secrets.ftp_host }}
