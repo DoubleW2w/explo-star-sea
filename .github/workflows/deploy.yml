@@ -49,11 +49,11 @@ jobs:
           folder: src/.vuepress/dist
 
       - name: 📂FTP同步文件
-      uses: SamKirkland/FTP-Deploy-Action@4.3.3
-      with:
-        server: ${{ secrets.ftp_host }}
-        username: ${{ secrets.ftp_username }}
-        password: ${{ secrets.ftp_password }}
-        port: ${{ secrets.ftp_port }} # 建议更改默认的 21 端口
-        local-dir: src/.vuepress/dist/
-        server-dir: /www/wwwroot/doublew2w.cn/
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          port: ${{ secrets.ftp_port }} # 建议更改默认的 21 端口
+          local-dir: src/.vuepress/dist/
+          server-dir: /www/wwwroot/doublew2w.cn/
