@@ -57,6 +57,19 @@ jobs:
           private-ssh-key: ${{ secrets.SSH_KEY }}
           destination-path: ${{ secrets.DESTINATION_FOLDER}}
           source-path: src/.vuepress/dist/
+          rsync-options: |-
+          --archive
+          > --verbose
+          > --compress
+          > --human-readable
+          > --progress
+          > --delete-after
+          > --exclude=.git*
+          > --exclude=.git/
+          > --exclude=README.md
+          > --exclude=readme.md
+          > --exclude=.gitignore
+          > --exclude=.user.ini
         # 存在timeout问题，先注释
       # - name: 📂FTP同步文件
       #   if: env.FTP_HOST != ''
