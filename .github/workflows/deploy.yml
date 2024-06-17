@@ -55,7 +55,7 @@ jobs:
           target-server: ${{ secrets.SSH_TARGET_SERVER }}
           remote-user: ${{ secrets.SSH_USER }}
           private-ssh-key: ${{ secrets.SSH_KEY }}
-          destination-path: /www/wwwroot/doublew2w.cn
+          destination-path: ${{ secrets.DESTINATION_FOLDER}}
           source-path: src/.vuepress/dist/
         # 存在timeout问题，先注释
       # - name: 📂FTP同步文件
