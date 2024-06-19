@@ -3,18 +3,18 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://doublew2w.cn",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Doublew2w",
+    url: "https://doublew2w.cn",
   },
 
   iconAssets: "fontawesome-with-brands",
 
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "DoubleW2w/explo-star-sea",
 
   docsDir: "src",
 
@@ -40,11 +40,28 @@ export default hopeTheme({
     editLink: "在 GitHub 上编辑此页",
   },
 
+  // 版权描述
+  copyright: "基于 MIT 协议，© 2019-至今 DoubleW2w",
+
+  // 博客配置
+  blog: {
+    name: "DoubleW2w",
+    description: "游龙当归海，海不迎我自来也",
+    intro: "/about/",
+    medias: {
+      Steam: "https://steamcommunity.com/id/snymdgd/",
+      GitHub: "https://github.com/DoubleW2w",
+    },
+  },
+
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
 
   // 在这里配置主题提供的插件
   plugins: {
+    blog: {
+      excerpt: true,
+    },
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     comment: {
       provider: "Giscus",
@@ -60,18 +77,22 @@ export default hopeTheme({
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
-      align: true,
-      attrs: true,
+      /* ------------------ 样式化 -------------------------------------- */
+      alert: true, // 启用 GFM 警告
+      spoiler: true, // 启用 GFM 剧透文字
+      hint: true, // 提示容器
+      mark: true, // 高亮标记
+      align: true, // 对齐
+      attrs: true, // 属性支持
+      /* ------------------ 样式化 -------------------------------------- */
       codetabs: true,
       component: true,
       demo: true,
-      figure: true,
-      imgLazyload: true,
-      imgSize: true,
-      include: true,
-      mark: true,
+      figure: true, // 图片添加描述
+      imgLazyload: true, // 图片懒加载
+      imgSize: true, // 图片大小
+      include: true, // 导入文件
       plantuml: true,
-      spoiler: true,
       stylize: [
         {
           matcher: "Recommended",
@@ -85,12 +106,12 @@ export default hopeTheme({
           },
         },
       ],
-      sub: true,
-      sup: true,
-      tabs: true,
-      tasklist: true,
-      vPre: true,
-
+      sub: true, // 启用上角标功能
+      sup: true, // 启用下角标功能
+      tabs: true, // 支持选项卡功能
+      tasklist: true, // 启用任务列表功能
+      // vPre: true,
+      gfm: true,
       // 在启用之前安装 chart.js
       // chart: true,
 
@@ -105,8 +126,9 @@ export default hopeTheme({
       // gfm requires mathjax-full to provide tex support
       // gfm: true,
 
-      // 在启用之前安装 katex
-      // katex: true,
+      // 在启用之前安装 katex  pnpm add -D katex
+      // 使用 KaTeX 启用 TeX 支持
+      katex: true,
 
       // 在启用之前安装 mathjax-full
       // mathjax: true,
