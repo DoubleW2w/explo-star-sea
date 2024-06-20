@@ -8,7 +8,8 @@ export default defineUserConfig({
   lang: "zh-CN",
   // 网站标题
   title: "DoubleW2w",
-  description: "vuepress-theme-hope 的文档演示",
+  description:
+    "开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。",
 
   theme,
 

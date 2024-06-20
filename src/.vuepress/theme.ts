@@ -23,11 +23,13 @@ export default hopeTheme({
 
   // 侧边栏
   sidebar,
-
+  // 全屏按钮
+  fullscreen: true,
   // 页脚
   footer: "默认页脚",
   displayFooter: true,
-
+  // 版权描述
+  copyright: "基于 MIT 协议，© 2019-至今 DoubleW2w",
   // 加密配置
   encrypt: {
     config: {
@@ -40,17 +42,18 @@ export default hopeTheme({
     editLink: "在 GitHub 上编辑此页",
   },
 
-  // 版权描述
-  copyright: "基于 MIT 协议，© 2019-至今 DoubleW2w",
+
 
   // 博客配置
   blog: {
-    name: "DoubleW2w",
+    name: "DoubleW2w", // 博主姓名
+    avatar: "/assets/image/blog-avatar.jpg",
     description: "游龙当归海，海不迎我自来也",
-    intro: "/about/",
+    intro: "/about/aboutMe",
     medias: {
       Steam: "https://steamcommunity.com/id/snymdgd/",
       GitHub: "https://github.com/DoubleW2w",
+      "163Music": "https://y.music.163.com/m/user?id=348082118",
     },
   },
 
