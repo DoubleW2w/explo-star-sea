@@ -42,7 +42,11 @@ export default hopeTheme({
     editLink: "在 GitHub 上编辑此页",
   },
 
+  prevLink: true, // 是否在页面底部显示上一篇链接
+  nextLink: true, // 是否在页面底部显示下一篇链接
 
+  lastUpdated: true, // 是否显示页面最后更新时间
+  contributors: true, // 是否显示页面贡献者
 
   // 博客配置
   blog: {

@@ -7,6 +7,7 @@ export default sidebar({
       children: "structure",
     },
   ],
+  "/leetcode/": "structure",
   "/": [
     "",
     // {
