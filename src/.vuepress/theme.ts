@@ -72,10 +72,15 @@ export default hopeTheme({
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     comment: {
       provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
+      repo: "DoubleW2w/blog-giscus",
+      repoId: "R_kgDOMNjC-Q",
       category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      categoryId: "DIC_kwDOMNjC-c4CgWGU",
+      mapping:"pathname",
+      strict: true,
+      lazyLoading:true,
+      reactionsEnabled:true,
+      inputPosition:"top"
     },
 
     components: {
