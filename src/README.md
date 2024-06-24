@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: 项目主页
+title: 主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 bgImageStyle:
   background-attachment: fixed

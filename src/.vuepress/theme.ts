@@ -66,10 +66,11 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
+    // 博客插件
     blog: {
       excerpt: true,
     },
-    // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
+    // 评论插件
     comment: {
       provider: "Giscus",
       repo: "DoubleW2w/blog-giscus",
@@ -87,7 +88,7 @@ export default hopeTheme({
       components: ["Badge", "VPCard"],
     },
 
-    // 此处开启了很多功能用于演示，你应仅保留用到的功能。
+    // markdown增强插件
     mdEnhance: {
       /* ------------------ 样式化 -------------------------------------- */
       alert: true, // 启用 GFM 警告
@@ -162,6 +163,30 @@ export default hopeTheme({
 
       // install sandpack-vue3 before enabling it
       // sandpack: true,
+    },
+    // 代码高亮插件
+    shiki:{
+      langs:[
+        'java','javascript','typescript','markdown','html','lua','c',
+        'ansi','js','ts','vue','vue-html','bash','nginx','css','py','python'
+      ],
+      themes: {
+        light: "github-light",
+        dark: "one-dark-pro",
+      },
+      notationDiff:true,
+      notationHighlight:true,
+    },
+    // 搜索插件
+    searchPro:{
+      indexContent:true,
+    },
+    feed: {
+      atom: true,
+      json: true,
+      rss: true,
+      count: 10,
+      sorter: (a, b) => Number(b.frontmatter.date) - Number(a.frontmatter.date),
     },
 
     // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
