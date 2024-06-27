@@ -101,7 +101,6 @@ export default hopeTheme({
       codetabs: true,
       component: true,
       demo: true,
-      figure: true, // 图片添加描述
       imgLazyload: true, // 图片懒加载
       imgSize: true, // 图片大小
       include: true, // 导入文件
@@ -123,15 +122,9 @@ export default hopeTheme({
       sup: true, // 启用下角标功能
       tabs: true, // 支持选项卡功能
       tasklist: true, // 启用任务列表功能
-      // vPre: true,
       gfm: true,
-      // 在启用之前安装 chart.js
-      // chart: true,
-
-      // insert component easily
-
       // 在启用之前安装 echarts
-      // echarts: true,
+      echarts: true,
 
       // 在启用之前安装 flowchart.ts
       // flowchart: true,
