@@ -54,6 +54,9 @@ jobs:
         with:
           target-server: ${{ secrets.SSH_TARGET_SERVER }}
           remote-user: ${{ secrets.SSH_USER }}
+          # ssh-keygen -m PEM -t rsa -b 4096
+          # cat /root/.ssh/id_rsa.pub >> /root/.ssh/authorized_keys
+          # cat id_rsa
           private-ssh-key: ${{ secrets.SSH_KEY }}
           destination-path: ${{ secrets.DESTINATION_FOLDER}}
           source-path: src/.vuepress/dist/
