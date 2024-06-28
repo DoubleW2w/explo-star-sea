@@ -6,8 +6,8 @@
     <link>https://doublew2w.cn/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 27 Jun 2024 17:52:38 GMT</pubDate>
-    <lastBuildDate>Thu, 27 Jun 2024 17:52:38 GMT</lastBuildDate>
+    <pubDate>Fri, 28 Jun 2024 11:37:56 GMT</pubDate>
+    <lastBuildDate>Fri, 28 Jun 2024 11:37:56 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>使用指南</category>
@@ -18,7 +18,7 @@
       <guid>https://doublew2w.cn/demo/</guid>
       <source url="https://doublew2w.cn/rss.xml">主要功能与配置演示</source>
       <category>使用指南</category>
-      <pubDate>Thu, 27 Jun 2024 17:51:53 GMT</pubDate>
+      <pubDate>Fri, 28 Jun 2024 11:37:13 GMT</pubDate>
     </item>
     <item>
       <title>布局与功能禁用</title>
@@ -27,7 +27,7 @@
       <source url="https://doublew2w.cn/rss.xml">布局与功能禁用</source>
       <description>你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。</description>
       <category>使用指南</category>
-      <pubDate>Thu, 27 Jun 2024 17:51:53 GMT</pubDate>
+      <pubDate>Fri, 28 Jun 2024 11:37:13 GMT</pubDate>
       <content:encoded><![CDATA[<p>你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。</p>
 <!-- more -->
 <p>本页面就是一个示例，禁用了如下功能:</p>
@@ -53,7 +53,7 @@
       <source url="https://doublew2w.cn/rss.xml">布局</source>
       <description>布局包括: 导航栏 侧边栏 页脚 同时每个页面包含: 路径导航 标题和页面信息 TOC (文章标题列表) 贡献者、更新时间等页面元信息 评论 主题也带有以下元素: 夜间模式按钮 返回顶部按钮 打印按钮 你可以在主题选项和页面的 frontmatter 中自定义它们。</description>
       <category>指南</category>
-      <pubDate>Thu, 27 Jun 2024 17:51:53 GMT</pubDate>
+      <pubDate>Fri, 28 Jun 2024 11:37:13 GMT</pubDate>
       <content:encoded><![CDATA[<p>布局包括:</p>
 <ul>
 <li><a href="https://theme-hope.vuejs.press/zh/guide/layout/navbar.html" target="_blank" rel="noopener noreferrer">导航栏</a></li>
@@ -84,7 +84,7 @@
       <source url="https://doublew2w.cn/rss.xml">Markdown 展示</source>
       <description>VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。 你需要创建并编写 Markdown，以便 VuePress 可以根据文件结构将它们转换为不同的页面。</description>
       <category>使用指南</category>
-      <pubDate>Thu, 27 Jun 2024 17:51:53 GMT</pubDate>
+      <pubDate>Fri, 28 Jun 2024 11:37:13 GMT</pubDate>
       <content:encoded><![CDATA[<p>VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。</p>
 <p>你需要创建并编写 Markdown，以便 VuePress 可以根据文件结构将它们转换为不同的页面。</p>
 <!-- more -->
@@ -229,6 +229,225 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>15-三数之和</title>
+      <link>https://doublew2w.cn/leetcode/15-3sum.html</link>
+      <guid>https://doublew2w.cn/leetcode/15-3sum.html</guid>
+      <source url="https://doublew2w.cn/rss.xml">15-三数之和</source>
+      <description>题目地址(15. 三数之和 - 力扣（LeetCode）) https://leetcode.cn/problems/3sum/description/ 题目描述 给你一个整数数组 nums ，判断是否存在三元组 [nums[i], nums [j], nums [k]] 满足 i != j 、 i != k 且 j != k ，同时还满足 nums ...</description>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>题目地址(15. 三数之和 - 力扣（LeetCode）)</h2>
+<p><a href="https://leetcode.cn/problems/3sum/description/" target="_blank" rel="noopener noreferrer">https://leetcode.cn/problems/3sum/description/</a></p>
+<h2>题目描述</h2>
+<p> 给你一个整数数组 <code> nums </code> ，判断是否存在三元组 <code> [nums[i], nums [j], nums [k]]</code> 满足 <code> i != j </code>、<code> i != k </code> 且 <code> j != k </code> ，同时还满足 <code> nums [i] + nums [j] + nums [k] == 0 </code> 。请 </p>
+<p> 你返回所有和为 <code> 0 </code> 且不重复的三元组。</p>
+<p> <strong> 注意：</strong> 答案中不可以包含重复的三元组。</p>
+<p>&nbsp; </p>
+<p>&nbsp; </p>
+<p> <strong> 示例 1：</strong> </p>
+<pre> <strong> 输入：</strong> nums = [-1,0,1,2,-1,-4]
+<strong> 输出：</strong> [[-1,-1,2], [-1,0,1]]
+<strong> 解释：</strong>
+nums [0] + nums [1] + nums [2] = (-1) + 0 + 1 = 0 。
+nums [1] + nums [2] + nums [4] = 0 + 1 + (-1) = 0 。
+nums [0] + nums [3] + nums [4] = (-1) + 2 + (-1) = 0 。
+不同的三元组是 [-1,0,1] 和 [-1,-1,2] 。
+注意，输出的顺序和三元组的顺序并不重要。
+</pre>
+<p> <strong> 示例 2：</strong> </p>
+<pre> <strong> 输入：</strong> nums = [0,1,1]
+<strong> 输出：</strong> []
+<strong> 解释：</strong> 唯一可能的三元组和不为 0 。
+</pre>
+<p> <strong> 示例 3：</strong> </p>
+<pre> <strong> 输入：</strong> nums = [0,0,0]
+<strong> 输出：</strong> [[0,0,0]]
+<strong> 解释：</strong> 唯一可能的三元组和为 0 。
+</pre>
+<p>&nbsp; </p>
+<p> <strong> 提示：</strong> </p>
+<ul>
+	<li> <code> 3 &lt;= nums.length &lt;= 3000 </code> </li>
+	<li> <code>-10 <sup> 5 </sup> &lt;= nums [i] &lt;= 10 <sup> 5 </sup> </code> </li>
+</ul>
+<h2>前置知识</h2>
+<ul>
+<li>双指针</li>
+</ul>
+<h2>思路：排序+双指针</h2>
+<p>如果使用「暴力枚举」的方式，时间复杂度为 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>, 最后还要通过哈希表进行去重。</p>
+<p>为了「不重复」，我们先要排序。<strong>这样就能保证我们每一层循环都可以过滤掉相同的元素，而且能快速做出剪枝</strong></p>
+<p>排序的时间复杂度为 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(nlogn)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></p>
+<p>在固定两个元素的情况下，第三个元素会导致和为 <code>&lt;0</code> <code>&gt;0</code> <code>=0</code>。而两个元素的交替移动也能达到这个效果。</p>
+<p>定义三个指针 <code>k</code>, <code>i</code>, <code>j</code>，其中 <code>k</code> 指向最左的元素，双指针 <code>i</code>, <code>j</code> 分别在数组索引（k, length(nums)）处, 双指针 i , j 交替向中间移动，记录对于每个固定指针 k 的所有满足 nums [k] + nums [i] + nums [j] == 0 的 i, j 组合：</p>
+<ul>
+<li>如果 <code>nums[k] &gt; 0</code> ，而 <code>nums[k]</code> 又是最小，所以和肯定 &gt; 0，终止循环</li>
+<li>如果 <code>nums[k] == nums[k-1]</code> 有可能是重复答案，处理一次即可</li>
+<li>双指针 i, j 变动情况：
+<ul>
+<li>如果和 <strong>&lt; 0</strong>, 说明 i 需要往 <strong>右边</strong> 移动，移动的时候要注意处理相同元素情况</li>
+<li>如果和 <strong>&gt; 0</strong>, 说明 j 需要往 <strong>左边</strong> 移动，移动的时候要注意处理相同元素情况</li>
+<li>如果和 <strong>= 0</strong>, i 和 j 同时往中间移动的时候处理相同元素的情况</li>
+</ul>
+</li>
+</ul>
+<h2>关键点</h2>
+<ul>
+<li>为了 “不可以包含重复的三元组”，通过排序容易找到相同的三元组答案。</li>
+<li>为了更有效的找到有效解，双指针「交替向中间移动」</li>
+</ul>
+<h2>代码</h2>
+<ul>
+<li>语言支持：Java</li>
+</ul>
+<p>Java Code:</p>
+<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#E5C07B"> Solution</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">    public</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> List</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">List</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#D73A49;--shiki-dark:#E5C07B">Integer</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&gt;&gt;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> threeSum</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[] </span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">nums</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 三重循环枚举，不重复则需要</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 第二重循环枚举到的元素不小于当前第一重循环枚举到的元素；</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 第三重循环枚举到的元素不小于当前第二重循环枚举到的元素；</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 因此需要先排序。</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 双指针为什么要交替移动，往中间靠拢</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 在固定两重循环元素的情况，第三个元素导致的三数之和有可能导致 &gt; 0 ,= 0 &lt; 0，也有可能 = 0（重复答案）</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 而 &lt; 0 时，第二个枚举元素的下标要右边移动，增大总和</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 而 &gt; 0 时，只能让第三个枚举元素的下标向左移动，减小总和</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // = 0，就是当前答案，随后继续交替移动，排除重复答案、</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        List</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">List</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#D73A49;--shiki-dark:#E5C07B">Integer</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&gt;&gt; </span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">res</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> new</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> ArrayList</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;&gt;();</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(nums </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> ||</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> nums</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">length</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> &lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">3</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">){</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            return</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> res;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        Arrays</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">sort</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(nums);</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> k</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;k </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> nums</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">length</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; k</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">){</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(nums[k] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">break</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 此时剩余两个元素都 &gt; 0，往后的查找不满足。</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(k </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> &amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[k] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[k </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">continue</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 找到重复答案（题目要求不重复）</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> k </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">,j </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> nums</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">length</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> -</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(i </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> j){</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> sum</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[k] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[i] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[j];</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(sum </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">){</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                    while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(i </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> j </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[i] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">i]); </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 不判断相同元素</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">                }</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">else</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(sum </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">){</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                    while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(i </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> j </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[j] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">--</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">j]); </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 不判断相同元素</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">                }</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">else</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(sum </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">){</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">                    res</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">add</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">new</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> ArrayList</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#D73A49;--shiki-dark:#E5C07B">Integer</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&gt;(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">Arrays</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">asList</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(nums[k],nums[i],nums[j])));</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                    while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(i </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> j </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[i] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">i]); </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 不判断相同答案的元素</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                    while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(i </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> j </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[j] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">--</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">j]); </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 不判断相同答案的元素</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">                }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        return</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> res;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>复杂度分析</strong></p>
+<p>令 n 为数组长度。</p>
+<ul>
+<li>时间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，排序的时间复杂度为 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(nlogn)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>。双重循环的时间复杂度为 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></li>
+<li>空间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>，指针使用常数大小的额外空间，忽略答案的存储空间。</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>18-四数之和</title>
+      <link>https://doublew2w.cn/leetcode/18-4sum.html</link>
+      <guid>https://doublew2w.cn/leetcode/18-4sum.html</guid>
+      <source url="https://doublew2w.cn/rss.xml">18-四数之和</source>
+      <description>题目地址(18. 四数之和 - 力扣（LeetCode）) https://leetcode.cn/problems/4sum/description/ 题目描述 给你一个由 n 个整数组成的数组 nums ，和一个目标值 target 。请你找出并返回满足下述全部条件且不重复的四元组 [nums[a], nums[b], nums[c], nums[...</description>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>题目地址(18. 四数之和 - 力扣（LeetCode）)</h2>
+<p><a href="https://leetcode.cn/problems/4sum/description/" target="_blank" rel="noopener noreferrer">https://leetcode.cn/problems/4sum/description/</a></p>
+<h2>题目描述</h2>
+<p>给你一个由 <code>n</code> 个整数组成的数组&nbsp;<code>nums</code> ，和一个目标值 <code>target</code> 。请你找出并返回满足下述全部条件且<strong>不重复</strong>的四元组&nbsp;<code>[nums[a], nums[b], nums[c], nums[d]]</code>&nbsp;（若两个四元组元素一一对应，则认为两个四元组重复）：</p>
+<ul>
+	<li><code>0 &lt;= a, b, c, d&nbsp;&lt; n</code></li>
+	<li><code>a</code>、<code>b</code>、<code>c</code> 和 <code>d</code> <strong>互不相同</strong></li>
+	<li><code>nums[a] + nums[b] + nums[c] + nums[d] == target</code></li>
+</ul>
+<p>你可以按 <strong>任意顺序</strong> 返回答案 。</p>
+<p>&nbsp;</p>
+<p><strong>示例 1：</strong></p>
+<pre><strong>输入：</strong>nums = [1,0,-1,0,-2,2], target = 0
+<strong>输出：</strong>[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+</pre>
+<p><strong>示例 2：</strong></p>
+<pre><strong>输入：</strong>nums = [2,2,2,2,2], target = 8
+<strong>输出：</strong>[[2,2,2,2]]
+</pre>
+<p>&nbsp;</p>
+<p><strong>提示：</strong></p>
+<ul>
+	<li><code>1 &lt;= nums.length &lt;= 200</code></li>
+	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
+	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
+</ul>
+<h2>前置知识</h2>
+<ul>
+<li>哈希表</li>
+<li>三数之和</li>
+</ul>
+<h2>思路</h2>
+<p>本题与「<a href="./15-3sum">15. 三数之和</a>」相似，解法也相似。</p>
+<p>为了避免枚举到重复四元组，则需要保证每一重循环枚举到的元素不小于其上一重循环枚举到的元素，且在同一重循环中不能多次枚举到相同的元素。因此我们需要「排序」。</p>
+<p>使用两重循环分别枚举前两个数，然后在两重循环枚举到的数之后使用双指针枚举剩下的两个数。</p>
+<h2>关键点</h2>
+<ul>
+<li>
+<p>排序解决重复问题</p>
+</li>
+<li>
+<p>使用两重循环分别枚举前两个数，然后在两重循环枚举到的数之后使用双指针枚举剩下的两个数。</p>
+</li>
+</ul>
+<h2>代码</h2>
+<ul>
+<li>语言支持：Java</li>
+</ul>
+<p>Java Code:</p>
+<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#E5C07B"> Solution</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">    public</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> List</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">List</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#D73A49;--shiki-dark:#E5C07B">Integer</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&gt;&gt;</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> fourSum</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[] </span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">nums</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> target</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        Arrays</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">sort</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(nums);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        List</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">List</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#D73A49;--shiki-dark:#E5C07B">Integer</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&gt;&gt; </span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">ans</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> new</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> ArrayList</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;&gt;();</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> n</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> nums</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">length</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 枚举第一个数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> a</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; a </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> n </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 3</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; a</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            long</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> x</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[a];</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">            // 跳过重复数字</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (a </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> &amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> x </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[a </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">continue</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (x </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[a </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[a </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 2</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[a </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 3</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> target) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">break</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (x </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[n </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 3</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[n </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 2</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[n </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> target) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">continue</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">            // 枚举第二个数</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> b</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> a </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; b </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> n </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 2</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; b</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                long</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> y</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[b];</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (b </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> a </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> &amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> y </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[b </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">continue</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (x </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> y </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[b </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[b </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 2</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> target) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">break</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (x </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> y </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[n </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 2</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[n </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> target) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">continue</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> l</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> b </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, r </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> n </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (l </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> r) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                    long</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> sum</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> x </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> y </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[l] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[r];</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                    if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (sum </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> target) r</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">--</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                    else</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (sum </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> target) l</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                    else</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">                        // sum == target</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">                        ans</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">add</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">Arrays</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">asList</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">((</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)x, (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)y, nums[l], nums[r]));</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">                        l</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                        while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (l </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> r </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[l] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[l </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]) l</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">                        r</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">--</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                        while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (l </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> r </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[r] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> nums[r </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]) r</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">--</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">                    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">                }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        return</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> ans;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>复杂度分析</strong></p>
+<p>令 n 为数组长度。</p>
+<ul>
+<li>时间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，排序的时间复杂度是 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(nlogn)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>，枚举四元组的时间复杂度是 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>，因此总时间复杂度为 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>3</mn></msup><mo>+</mo><mi>n</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo stretchy="false">)</mo><mo>=</mo><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^3+nlogn)=O(n^3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">n</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">n</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>。</li>
+<li>空间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>，空间复杂度主要取决于排序额外使用的空间。可以看成使用了一个额外的数组存储了数组 nums 的副本并排序，空间复杂度为 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>。</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>202-快乐数</title>
       <link>https://doublew2w.cn/leetcode/202-%E5%BF%AB%E4%B9%90%E6%95%B0.html</link>
       <guid>https://doublew2w.cn/leetcode/202-%E5%BF%AB%E4%B9%90%E6%95%B0.html</guid>
@@ -337,354 +556,58 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>142-环形链表 ii</title>
-      <link>https://doublew2w.cn/leetcode/142-linked-list-cycle-ii.html</link>
-      <guid>https://doublew2w.cn/leetcode/142-linked-list-cycle-ii.html</guid>
-      <source url="https://doublew2w.cn/rss.xml">142-环形链表 ii</source>
-      <description>题目地址(142. 环形链表 II - 力扣（LeetCode）) https://leetcode.cn/problems/linked-list-cycle-ii/description/ 题目描述 给定一个链表的头节点 head ，返回链表开始入环的第一个节点。 如果链表无环，则返回 null 。 如果链表中有某个节点，可以通过连续跟踪 next...</description>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>题目地址(142. 环形链表 II - 力扣（LeetCode）)</h2>
-<p><a href="https://leetcode.cn/problems/linked-list-cycle-ii/description/" target="_blank" rel="noopener noreferrer">https://leetcode.cn/problems/linked-list-cycle-ii/description/</a></p>
+      <title>383-赎金信</title>
+      <link>https://doublew2w.cn/leetcode/383-ransom-note.html</link>
+      <guid>https://doublew2w.cn/leetcode/383-ransom-note.html</guid>
+      <source url="https://doublew2w.cn/rss.xml">383-赎金信</source>
+      <description>题目地址(383. 赎金信 - 力扣（LeetCode）) https://leetcode.cn/problems/ransom-note/description/ 题目描述 给你两个字符串： ransomNote 和 magazine ，判断 ransomNote 能不能由 magazine 里面的字符构成。 如果可以，返回 true ；否则返回 ...</description>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>题目地址(383. 赎金信 - 力扣（LeetCode）)</h2>
+<p><a href="https://leetcode.cn/problems/ransom-note/description/" target="_blank" rel="noopener noreferrer">https://leetcode.cn/problems/ransom-note/description/</a></p>
 <h2>题目描述</h2>
-<p> 给定一个链表的头节点 &nbsp; <code> head </code>&nbsp;，返回链表开始入环的第一个节点。&nbsp; <em> 如果链表无环，则返回&nbsp; <code> null </code>。</em> </p>
-<p> 如果链表中有某个节点，可以通过连续跟踪 <code> next </code> 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 <code> pos </code> 来表示链表尾连接到链表中的位置（<strong> 索引从 0 开始 </strong>）。如果 <code> pos </code> 是 <code>-1 </code>，则在该链表中没有环。<strong> 注意：<code> pos </code> 不作为参数进行传递 </strong>，仅仅是为了标识链表的实际情况。</p>
-<p> <strong> 不允许修改 </strong> 链表。</p>
-<ul>
-</ul>
+<p> 给你两个字符串：<code> ransomNote </code> 和 <code> magazine </code> ，判断 <code> ransomNote </code> 能不能由 <code> magazine </code> 里面的字符构成。</p>
+<p> 如果可以，返回 <code> true </code> ；否则返回 <code> false </code> 。</p>
+<p> <code> magazine </code> 中的每个字符只能在 <code> ransomNote </code> 中使用一次。</p>
 <p>&nbsp; </p>
 <p> <strong> 示例 1：</strong> </p>
-<p> <img src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png"> </p>
-<pre> <strong> 输入：</strong> head = [3,2,0,-4], pos = 1
-<strong> 输出：</strong> 返回索引为 1 的链表节点
-<strong> 解释：</strong> 链表中有一个环，其尾部连接到第二个节点。
-</pre>
-<p> <strong> 示例&nbsp; 2：</strong> </p>
-<p> <img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test2.png"> </p>
-<pre> <strong> 输入：</strong> head = [1,2], pos = 0
-<strong> 输出：</strong> 返回索引为 0 的链表节点
-<strong> 解释：</strong> 链表中有一个环，其尾部连接到第一个节点。
-</pre>
-<p> <strong> 示例 3：</strong> </p>
-<p> <img alt="" src="https://assets.leetcode-cn.com/aliyun-lc-upload/uploads/2018/12/07/circularlinkedlist_test3.png"> </p>
-<pre> <strong> 输入：</strong> head = [1], pos = -1
-<strong> 输出：</strong> 返回 null
-<strong> 解释：</strong> 链表中没有环。
-</pre>
-<p>&nbsp; </p>
-<p> <strong> 提示：</strong> </p>
-<ul>
-	<li> 链表中节点的数目范围在范围 <code> [0, 10 <sup> 4 </sup>] </code> 内 </li>
-	<li> <code>-10 <sup> 5 </sup> &lt;= Node.val &lt;= 10 <sup> 5 </sup> </code> </li>
-	<li> <code> pos </code> 的值为 <code>-1 </code> 或者链表中的一个有效索引 </li>
-</ul>
-<p>&nbsp; </p>
-<p> <strong> 进阶：</strong> 你是否可以使用 <code> O(1)</code> 空间解决此题？</p>
-<h2>前置知识</h2>
-<ul>
-<li>链表</li>
-<li>环形证明</li>
-</ul>
-<h2>思路</h2>
-<p>使用双指针，分别定义为 fast 和 slow。从头节点出发，fast 每次走两步，slow 每次走 1 步。</p>
-<ul>
-<li>如果存在环，由于 fast 的步速大于 slow，最终 fast 和 slow 一定会在环中相遇</li>
-<li>如果不存在环，fast 会先于 slow 走到 null</li>
-</ul>
-<p>从头节点到环形入口节点的节点数为 x，环形入口节点到 fast 指针与 slow 指针相遇节点节点数为 y。从相遇节点 再到环形入口节点节点数为 z。</p>
-<p></p>
-<p>相遇时，slow 走过的节点数为 x+y，fast 走过的节点数为 x+y+n(y+z)，其中 n 为走过的环的圈数。</p>
-<p>fast 每次走两步，slow 每次走一步。</p>
-<ul>
-<li>x+y+n(y+z) = 2*(x+y) =&gt; x = (n-1)(y+z)+z</li>
-</ul>
-<p>从「相遇点到入环点的距离」加上「 n−1 圈的环长度」，恰好等于「从链表头部到入环点的距离」。</p>
-<h2>关键点</h2>
-<ul>
-<li>判断链表是否环</li>
-<li>如果有环，如何找到这个环的入口</li>
-</ul>
-<h2>代码</h2>
-<ul>
-<li>语言支持：Java</li>
-</ul>
-<p>Java Code:</p>
-<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">/**</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * Definition for singly-linked list.</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * class ListNode {</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *     int val;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *     ListNode next;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *     ListNode(int x) {</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *         val = x;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *         next = null;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *     }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> */</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">public</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#E5C07B"> Solution</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">    public</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> ListNode</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> detectCycle</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">ListNode</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> head</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(head </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> ||</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> head</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> ==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">){</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            return</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 采用双指针的方式</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> fast</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> head,slow </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> head;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 第一次相遇, fast 走了 2n 个环， slow 走了 n 个环</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">true</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">){</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(fast </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> ||</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> fast</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> ==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">return</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            fast </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> fast</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            slow </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> slow</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(fast </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> slow) </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">break</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 让 fast 和 slow 一起同时 1，在次相遇就是环入口</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        fast </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> head;</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(fast </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">!=</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> slow){</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            fast </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> fast</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            slow </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> slow</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        return</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> slow;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">    }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">}</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>复杂度分析</strong></p>
-<ul>
-<li>时间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>：第一次相遇时，slow 要走 x+y 步，第二次相遇，slow 要走 z 步，总体是线性复杂度</li>
-<li>空间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>：双指针使用常数大小的额外空间</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>19-删除链表的倒数第N个结点</title>
-      <link>https://doublew2w.cn/leetcode/19-remove-nth-node-from-end-of-list.html</link>
-      <guid>https://doublew2w.cn/leetcode/19-remove-nth-node-from-end-of-list.html</guid>
-      <source url="https://doublew2w.cn/rss.xml">19-删除链表的倒数第N个结点</source>
-      <description>题目地址(19. 删除链表的倒数第 N 个结点 - 力扣（LeetCode）) https://leetcode.cn/problems/remove-nth-node-from-end-of-list/description/ 题目描述 给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。 示例 1： 示例 2： 示例 3： 提示： 链...</description>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>题目地址(19. 删除链表的倒数第 N 个结点 - 力扣（LeetCode）)</h2>
-<p><a href="https://leetcode.cn/problems/remove-nth-node-from-end-of-list/description/" target="_blank" rel="noopener noreferrer">https://leetcode.cn/problems/remove-nth-node-from-end-of-list/description/</a></p>
-<h2>题目描述</h2>
-<p> 给你一个链表，删除链表的倒数第&nbsp; <code> n </code> <em>&nbsp; </em> 个结点，并且返回链表的头结点。</p>
-<p>&nbsp; </p>
-<p> <strong> 示例 1：</strong> </p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/10/03/remove_ex1.jpg" style="width: 542px; height: 222px;">
-<pre> <strong> 输入：</strong> head = [1,2,3,4,5], n = 2
-<strong> 输出：</strong> [1,2,3,5]
+<pre> <strong> 输入：</strong> ransomNote = "a", magazine = "b"
+<strong> 输出：</strong> false
 </pre>
 <p> <strong> 示例 2：</strong> </p>
-<pre> <strong> 输入：</strong> head = [1], n = 1
-<strong> 输出：</strong> []
+<pre> <strong> 输入：</strong> ransomNote = "aa", magazine = "ab"
+<strong> 输出：</strong> false
 </pre>
 <p> <strong> 示例 3：</strong> </p>
-<pre> <strong> 输入：</strong> head = [1,2], n = 1
-<strong> 输出：</strong> [1]
+<pre> <strong> 输入：</strong> ransomNote = "aa", magazine = "aab"
+<strong> 输出：</strong> true
 </pre>
 <p>&nbsp; </p>
 <p> <strong> 提示：</strong> </p>
 <ul>
-	<li> 链表中结点的数目为 <code> sz </code> </li>
-	<li> <code> 1 &lt;= sz &lt;= 30 </code> </li>
-	<li> <code> 0 &lt;= Node.val &lt;= 100 </code> </li>
-	<li> <code> 1 &lt;= n &lt;= sz </code> </li>
+	<li> <code> 1 &lt;= ransomNote.length, magazine.length &lt;= 10 <sup> 5 </sup> </code> </li>
+	<li> <code> ransomNote </code> 和 <code> magazine </code> 由小写英文字母组成 </li>
 </ul>
-<p>&nbsp; </p>
-<p> <strong> 进阶：</strong> 你能尝试使用一趟扫描实现吗？</p>
-<h2>前置知识</h2>
-<ul>
-<li>链表</li>
-<li>双指针</li>
-</ul>
-<h2>思路 1：双指针</h2>
-<p><span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>u</mi><mi>m</mi><mi>m</mi><mi>y</mi><mi>H</mi><mi>e</mi><mi>a</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">dummyHead</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">u</span><span class="mord mathnormal">mm</span><span class="mord mathnormal">yHe</span><span class="mord mathnormal">a</span><span class="mord mathnormal">d</span></span></span></span> 存储虚拟头节点，<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>i</mi><mi>r</mi><mi>s</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">first</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">i</span><span class="mord mathnormal">rs</span><span class="mord mathnormal">t</span></span></span></span> 存储头节点，<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>e</mi><mi>c</mi><mi>o</mi><mi>n</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">second</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">seco</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span></span></span></span> 存储虚拟头节点，进行遍历。</p>
-<ul>
-<li>让 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>i</mi><mi>r</mi><mi>s</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">first</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">i</span><span class="mord mathnormal">rs</span><span class="mord mathnormal">t</span></span></span></span> 先走 N 步。</li>
-<li><span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>e</mi><mi>c</mi><mi>o</mi><mi>n</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">second</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">seco</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span></span></span></span> 和 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>i</mi><mi>r</mi><mi>s</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">first</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">i</span><span class="mord mathnormal">rs</span><span class="mord mathnormal">t</span></span></span></span> 一起走。</li>
-<li>当 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>i</mi><mi>r</mi><mi>s</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">first</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">i</span><span class="mord mathnormal">rs</span><span class="mord mathnormal">t</span></span></span></span> 走到空节点时时，<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>e</mi><mi>c</mi><mi>o</mi><mi>n</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">second</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">seco</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span></span></span></span> 刚好走好倒数第 N+1 个</li>
-</ul>
-<p></p>
-<h2>关键点</h2>
-<ul>
-<li>由于要进行删除操作，因此要找到「倒数第 n+1」个节点位置</li>
-</ul>
-<h2>代码</h2>
-<ul>
-<li>语言支持：Java</li>
-</ul>
-<p>Java Code:</p>
-<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">/**</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * Definition for singly-linked list.</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * public class ListNode {</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * int val;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * ListNode next;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * ListNode() {}</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * ListNode(int val) { this.val = val; }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * ListNode(int val, ListNode next) { this.val = val; this.next = next; }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> */</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#E5C07B"> Solution</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">    public</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> ListNode</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> removeNthFromEnd</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">ListNode</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> head</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> n</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">head</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> ==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> &amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> n </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            return</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 怎么知道是倒数第 2 个，使用双指针，让一个指针先走 2 步</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> dummyHead</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, head);</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> first</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> head;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> second</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> dummyHead;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 让 first 先走 n，让 first 到达尾节点，second 刚好指向倒数第 n 个</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; i </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> n; i</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            first </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> first</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (first </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">!=</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            first </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> first</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            second </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> second</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        second</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> second</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        return</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> dummyHead</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">    }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">}</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>复杂度分析</strong></p>
-<p>令 n 为数组长度。</p>
-<ul>
-<li>时间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
-<li>空间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>24-两两交换链表中的节点</title>
-      <link>https://doublew2w.cn/leetcode/24-swap-nodes-in-pairs.html</link>
-      <guid>https://doublew2w.cn/leetcode/24-swap-nodes-in-pairs.html</guid>
-      <source url="https://doublew2w.cn/rss.xml">24-两两交换链表中的节点</source>
-      <description>题目地址(24. 两两交换链表中的节点 - 力扣（LeetCode）) https://leetcode.cn/problems/swap-nodes-in-pairs/description/ 题目描述 给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。 示例 1： 示...</description>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>题目地址(24. 两两交换链表中的节点 - 力扣（LeetCode）)</h2>
-<p><a href="https://leetcode.cn/problems/swap-nodes-in-pairs/description/" target="_blank" rel="noopener noreferrer">https://leetcode.cn/problems/swap-nodes-in-pairs/description/</a></p>
-<h2>题目描述</h2>
-<p>给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。</p>
-<p>&nbsp;</p>
-<p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/10/03/swap_ex1.jpg" style="width: 422px; height: 222px;">
-<pre><strong>输入：</strong>head = [1,2,3,4]
-<strong>输出：</strong>[2,1,4,3]
-</pre>
-<p><strong>示例 2：</strong></p>
-<pre><strong>输入：</strong>head = []
-<strong>输出：</strong>[]
-</pre>
-<p><strong>示例 3：</strong></p>
-<pre><strong>输入：</strong>head = [1]
-<strong>输出：</strong>[1]
-</pre>
-<p>&nbsp;</p>
-<p><strong>提示：</strong></p>
-<ul>
-	<li>链表中节点的数目在范围 <code>[0, 100]</code> 内</li>
-	<li><code>0 &lt;= Node.val &lt;= 100</code></li>
-</ul>
-<h2>前置知识</h2>
-<ul>
-<li>链表</li>
-</ul>
-<h2>思路1：虚拟头节点</h2>
-<p>使用变量 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>u</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">cur</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span> 代表当前节点，初始化为 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>u</mi><mi>r</mi><mo>=</mo><mi>d</mi><mi>u</mi><mi>m</mi><mi>m</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">cur = dummy</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">u</span><span class="mord mathnormal">mm</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span></span></span></span></p>
-<p>使用两个变量 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>i</mi><mi>r</mi><mi>s</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">first</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">i</span><span class="mord mathnormal">rs</span><span class="mord mathnormal">t</span></span></span></span> 和 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>e</mi><mi>c</mi><mi>o</mi><mi>n</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">second</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">seco</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span></span></span></span> 待交换的节点，即 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>i</mi><mi>r</mi><mi>s</mi><mi>t</mi><mo>=</mo><mi>c</mi><mi>u</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>n</mi><mi>e</mi><mi>x</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">first = cur.next</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">i</span><span class="mord mathnormal">rs</span><span class="mord mathnormal">t</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">c</span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathnormal">n</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord mathnormal">t</span></span></span></span> 和 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>e</mi><mi>c</mi><mi>o</mi><mi>n</mi><mi>d</mi><mo>=</mo><mi>c</mi><mi>u</mi><mi>r</mi><mi mathvariant="normal">.</mi><mi>n</mi><mi>e</mi><mi>x</mi><mi>t</mi><mi mathvariant="normal">.</mi><mi>n</mi><mi>e</mi><mi>x</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">second = cur.next.next</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">seco</span><span class="mord mathnormal">n</span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6151em;"></span><span class="mord mathnormal">c</span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord">.</span><span class="mord mathnormal">n</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord mathnormal">t</span><span class="mord">.</span><span class="mord mathnormal">n</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mord mathnormal">t</span></span></span></span></p>
-<p>当链表还剩下两个节点时，就可以进行更改链表节点的交换</p>
-<ul>
-<li>cur.next = secod</li>
-<li>first.next = second.next</li>
-<li>second.next = first</li>
-<li>cur = first</li>
-</ul>
-<p>进行下一轮的判断并且交换</p>
-<p></p>
-<h2>关键点</h2>
-<ol>
-<li>循环条件是当前链表还有2个以上的节点</li>
-<li>链表节点交换的指针变动</li>
-</ol>
-<h2>代码</h2>
-<ul>
-<li>语言支持：Java</li>
-</ul>
-<p>Java Code:</p>
-<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">/**</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * Definition for singly-linked list.</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * public class ListNode {</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *     int val;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *     ListNode next;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *     ListNode() {}</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *     ListNode(int val) { this.val = val; }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> */</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#E5C07B"> Solution</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">    public</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> ListNode</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> swapPairs</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">ListNode</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> head</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (head </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> ||</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> head</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> ==</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            return</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> head;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> dummy</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> new</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">); </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 设置一个虚拟头节点</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        dummy</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> head; </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 将虚拟头结点指向head,这样方便后续做删除操作</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> cur</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> dummy;</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">cur</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> !=</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> &amp;&amp;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> cur</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> !=</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">            ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> first</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> cur</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">            ListNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> second</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> cur</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">            cur</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> second; </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 步骤一</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">            first</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> second</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 步骤三</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">            second</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> first; </span><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">// 步骤二</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            cur </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> first;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        return</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> dummy</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">next</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">    }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">}</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>复杂度分析</strong></p>
-<p>令 n 为链表长度。</p>
-<ul>
-<li>时间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
-<li>空间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
-      <title>242-有效的字母异位词</title>
-      <link>https://doublew2w.cn/leetcode/242-%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html</link>
-      <guid>https://doublew2w.cn/leetcode/242-%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html</guid>
-      <source url="https://doublew2w.cn/rss.xml">242-有效的字母异位词</source>
-      <description>题目地址(242. 有效的字母异位词 - 力扣（LeetCode）) https://leetcode.cn/problems/valid-anagram/description/ 题目描述 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。 注意： 若 s 和 t 中每个字符出现的次数都相同，则称 s 和 t 互为字母异...</description>
-      <pubDate>Thu, 27 Jun 2024 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>题目地址(242. 有效的字母异位词 - 力扣（LeetCode）)</h2>
-<p><a href="https://leetcode.cn/problems/valid-anagram/description/" target="_blank" rel="noopener noreferrer">https://leetcode.cn/problems/valid-anagram/description/</a></p>
-<h2>题目描述</h2>
-<p> 给定两个字符串 <code> <em> s </em> </code> 和 <code> <em> t </em> </code> ，编写一个函数来判断 <code> <em> t </em> </code> 是否是 <code> <em> s </em> </code> 的字母异位词。</p>
-<p> <strong> 注意：</strong> 若&nbsp; <code> <em> s </em> </code> 和 <code> <em> t </em> </code> <em>&nbsp; </em> 中每个字符出现的次数都相同，则称&nbsp; <code> <em> s </em> </code> 和 <code> <em> t </em> </code> <em>&nbsp; </em> 互为字母异位词。</p>
-<p>&nbsp; </p>
-<p> <strong> 示例&nbsp; 1: </strong> </p>
-<pre> <strong> 输入: </strong> <em> s </em> = "anagram", <em> t </em> = "nagaram"
-<strong> 输出: </strong> true
-</pre>
-<p> <strong> 示例 2: </strong> </p>
-<pre> <strong> 输入: </strong> <em> s </em> = "rat", <em> t </em> = "car"
-<strong> 输出: </strong> false </pre>
-<p>&nbsp; </p>
-<p> <strong> 提示: </strong> </p>
-<ul>
-	<li> <code> 1 &lt;= s.length, t.length &lt;= 5 * 10 <sup> 4 </sup> </code> </li>
-	<li> <code> s </code> 和 <code> t </code>&nbsp; 仅包含小写字母 </li>
-</ul>
-<p>&nbsp; </p>
-<p> <strong> 进阶:&nbsp; </strong> 如果输入字符串包含 unicode 字符怎么办？你能否调整你的解法来应对这种情况？</p>
 <h2>前置知识</h2>
 <ul>
 <li>哈希表</li>
 </ul>
-<h2>思路：哈希表记录</h2>
+<h2>思路</h2>
 <ul>
-<li>若 s、t 长度不相等，则「非字母异位词」</li>
-<li>若 s、t 某对应字母数量不同，则「非字母异位词」</li>
+<li>如果两个字符串的长度不相等，则不是正确答案。</li>
+<li>如果 <code>ransomNote</code> 存在 <code>magazine</code> 没有的字母，则不是正确答案。</li>
+<li>定义一个长度为 26 的数组存放 <code>magazine</code> 不同字母的个数。
+<ul>
+<li>记录 <code>ransomNote</code> 每个字符的情况</li>
+<li>如果某个字符数量检查情况中，出现数量 &lt; 0，说明 <code>ransomNote</code> 针对该字母的数量比 <code>magazine</code> 多，也不是正确答案</li>
 </ul>
-<p>统计 s 各字符时执行 +1 ，统计 t 各字符时 −1 。若两字符串互为字母异位词，则最终哈希表中所有字符统计数值都应为 0 。</p>
+</li>
+</ul>
 <h2>关键点</h2>
 <ul>
-<li>使用哈希表进行记录不同字母出现的次数</li>
-<li>也可以使用长度固定的数组记录不同字母出现的次数</li>
+<li>字母总数为 26 个</li>
+<li>哈希表计数或者数组计数</li>
 </ul>
+<p>同样的题目还有 242-有效的字母异位词</p>
 <h2>代码</h2>
 <ul>
 <li>语言支持：Java</li>
@@ -692,30 +615,107 @@
 <p>Java Code:</p>
 <div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#E5C07B"> Solution</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">    public</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> boolean</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> isAnagram</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">String</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> s</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">String</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> t</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 先判断长度一致</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">s</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">length</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">!=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> t</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">length</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">()) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">    public</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> boolean</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> canConstruct</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">String</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> ransomNote</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">String</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> magazine</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">ransomNote</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">length</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">() </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> magazine</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">length</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">()) {</span></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            return</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> false</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">        // 使用字母的特性：只有 26 个，以一个数组来记录</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[] </span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">table</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> new</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">26</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">];</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; i </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> s</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">length</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(); i</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            table[</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">s</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">charAt</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(i) </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 'a'</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            table[</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">t</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">charAt</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(i) </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 'a'</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">--</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[] </span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">cnt</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> new</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">26</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">];</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">char</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> c</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> :</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> magazine</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">toCharArray</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">()) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            cnt[c </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 'a'</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> i</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; i </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 26</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">; i</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">++</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (table[i] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">!=</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">char</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> c</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> :</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> ransomNote</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">toCharArray</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">()) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            cnt[c </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 'a'</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">]</span><span style="--shiki-light:#D73A49;--shiki-dark:#ABB2BF">--</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (cnt[c </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#032F62;--shiki-dark:#98C379"> 'a'</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">] </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) {</span></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                return</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> false</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            }</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        return</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> true</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">    }</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">}</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>复杂度分析</strong></p>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>复杂度分析</strong></p>
+<p>令 n 为字符串长度。</p>
+<ul>
+<li>时间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>，遍历字符串所需要的时间复杂度</li>
+<li>空间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(S)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">)</span></span></span></span>,定义存储的数组，固定长度，|S| &lt;= 26;</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>454-四数相加 ii</title>
+      <link>https://doublew2w.cn/leetcode/454-4sum-ii.html</link>
+      <guid>https://doublew2w.cn/leetcode/454-4sum-ii.html</guid>
+      <source url="https://doublew2w.cn/rss.xml">454-四数相加 ii</source>
+      <description>题目地址(454. 四数相加 II - 力扣（LeetCode）) https://leetcode.cn/problems/4sum-ii/description/ 题目描述 给你四个整数数组 nums1 、 nums2 、 nums3 和 nums4 ，数组长度都是 n ，请你计算有多少个元组 (i, j, k, l) 能满足： 0 &amp;lt;= i, j...</description>
+      <pubDate>Fri, 28 Jun 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<h2>题目地址(454. 四数相加 II - 力扣（LeetCode）)</h2>
+<p><a href="https://leetcode.cn/problems/4sum-ii/description/" target="_blank" rel="noopener noreferrer">https://leetcode.cn/problems/4sum-ii/description/</a></p>
+<h2>题目描述</h2>
+<p> 给你四个整数数组 <code> nums1 </code>、<code> nums2 </code>、<code> nums3 </code> 和 <code> nums4 </code> ，数组长度都是 <code> n </code> ，请你计算有多少个元组 <code>(i, j, k, l)</code> 能满足：</p>
+<ul>
+	<li> <code> 0 &lt;= i, j, k, l &lt; n </code> </li>
+	<li> <code> nums1 [i] + nums2 [j] + nums3 [k] + nums4 [l] == 0 </code> </li>
+</ul>
+<p>&nbsp; </p>
+<p> <strong> 示例 1：</strong> </p>
+<pre> <strong> 输入：</strong> nums1 = [1,2], nums2 = [-2,-1], nums3 = [-1,2], nums4 = [0,2]
+<strong> 输出：</strong> 2
+<strong> 解释：</strong>
+两个元组如下：
+1. (0, 0, 0, 1) -&gt; nums1 [0] + nums2 [0] + nums3 [0] + nums4 [1] = 1 + (-2) + (-1) + 2 = 0
+2. (1, 1, 0, 0) -&gt; nums1 [1] + nums2 [1] + nums3 [0] + nums4 [0] = 2 + (-1) + (-1) + 0 = 0
+</pre>
+<p> <strong> 示例 2：</strong> </p>
+<pre> <strong> 输入：</strong> nums1 = [0], nums2 = [0], nums3 = [0], nums4 = [0]
+<strong> 输出：</strong> 1
+</pre>
+<p>&nbsp; </p>
+<p>&nbsp; <strong> 提示：</strong> </p>
+<ul>
+	<li> <code> n == nums1.length </code> </li>
+	<li> <code> n == nums2.length </code> </li>
+	<li> <code> n == nums3.length </code> </li>
+	<li> <code> n == nums4.length </code> </li>
+	<li> <code> 1 &lt;= n &lt;= 200 </code> </li>
+	<li> <code>-2 <sup> 28 </sup> &lt;= nums1 [i], nums2 [i], nums3 [i], nums4 [i] &lt;= 2 <sup> 28 </sup> </code> </li>
+</ul>
+<h2>前置知识</h2>
+<ul>
+<li>两数之和思路</li>
+</ul>
+<h2>思路</h2>
+<p>使用一个哈希表map存储 A 和 B 所有和sumAB的情况，其中 key 是和，value是和出现的次数</p>
+<p>使用同样的遍历方式，遍历 C + D，找到map是否存在  −(sumCD)。</p>
+<p>将 −(sumCD) 对应的值累加起来，就是答案。</p>
+<h2>代码</h2>
+<ul>
+<li>语言支持：Java</li>
+</ul>
+<p>Java Code:</p>
+<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#E5C07B"> Solution</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">    public</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> int</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> fourSumCount</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[] </span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">A</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[] </span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">B</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[] </span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">C</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">[] </span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">D</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">        Map</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#D73A49;--shiki-dark:#E5C07B">Integer</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#D73A49;--shiki-dark:#E5C07B">Integer</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&gt; </span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">countAB</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> new</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> HashMap</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#D73A49;--shiki-dark:#E5C07B">Integer</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#D73A49;--shiki-dark:#E5C07B">Integer</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">&gt;();</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> u</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> :</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> A) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> v</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> :</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> B) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">                countAB</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">put</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(u </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> v, </span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">countAB</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">getOrDefault</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(u </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> v, </span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66">0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> ans</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> 0</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> u</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> :</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> C) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            for</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> v</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> :</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> D) {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">                if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">countAB</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">containsKey</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">u </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> v)) {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">                    ans </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">+=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> countAB</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF">get</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">u </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">-</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> v);</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">                }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">            }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">        }</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        return</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> ans;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">    }</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>复杂度分析</strong></p>
 <p>令 n 为数组长度。</p>
 <ul>
-<li>时间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></li>
-<li>空间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>，数组长度为常数，因此空间复杂度为常数</li>
+<li>时间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>：使用双重循环进行遍历求和，其中哈希表操作都是 <span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></li>
+<li>空间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0641em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>：哈希表所用的空间，最坏情况下，A 和 B 数组中每个元素之和都不相同。</li>
 </ul>
 ]]></content:encoded>
     </item>
