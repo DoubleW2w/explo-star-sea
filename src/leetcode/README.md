@@ -5,3 +5,5 @@ icon: fa-solid fa-pen-to-square
 ---
 
 记录自己的刷题过程
+
+![img](../.vuepress/blog-resource/wallhaven-2yx5og.webp)

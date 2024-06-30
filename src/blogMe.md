@@ -8,6 +8,8 @@ title: 互联网小白
 heroText: DoubleW2w'Blog
 tagline: 盛年不重来，一日难再晨
 bgImage: "/assets/image/blog-bg-image.webp"
+bgImageStyle:
+  background-attachment: fixed
 heroFullScreen: true
 
 #footer: 自定义你的页脚文字
