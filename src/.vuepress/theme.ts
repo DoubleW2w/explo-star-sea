@@ -90,6 +90,11 @@ export default hopeTheme({
 
     // markdown增强插件
     mdEnhance: {
+      //
+      revealJs: {
+        themes: ["solarized"],
+        plugins:["highlight","zoom","notes"]
+      },
       /* ------------------ 样式化 -------------------------------------- */
       alert: true, // 启用 GFM 警告
       spoiler: true, // 启用 GFM 剧透文字
