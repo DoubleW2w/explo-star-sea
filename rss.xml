@@ -6,8 +6,8 @@
     <link>https://doublew2w.cn/</link>
     <description>开源工具、效率方法、心理学探索的自我提升笔记，记录并输出一切能让自己提升的知识。</description>
     <language>zh-CN</language>
-    <pubDate>Thu, 04 Jul 2024 04:54:34 GMT</pubDate>
-    <lastBuildDate>Thu, 04 Jul 2024 04:54:34 GMT</lastBuildDate>
+    <pubDate>Thu, 04 Jul 2024 15:34:48 GMT</pubDate>
+    <lastBuildDate>Thu, 04 Jul 2024 15:34:48 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>使用指南</category>
@@ -18,7 +18,7 @@
       <guid>https://doublew2w.cn/demo/</guid>
       <source url="https://doublew2w.cn/rss.xml">主要功能与配置演示</source>
       <category>使用指南</category>
-      <pubDate>Mon, 01 Jul 2024 08:25:12 GMT</pubDate>
+      <pubDate>Thu, 04 Jul 2024 15:33:54 GMT</pubDate>
     </item>
     <item>
       <title>布局与功能禁用</title>
@@ -27,7 +27,7 @@
       <source url="https://doublew2w.cn/rss.xml">布局与功能禁用</source>
       <description>你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。</description>
       <category>使用指南</category>
-      <pubDate>Mon, 01 Jul 2024 08:25:12 GMT</pubDate>
+      <pubDate>Thu, 04 Jul 2024 15:33:54 GMT</pubDate>
       <content:encoded><![CDATA[<p>你可以通过设置页面的 Frontmatter，在页面禁用功能与布局。</p>
 <!-- more -->
 <p>本页面就是一个示例，禁用了如下功能:</p>
@@ -53,7 +53,7 @@
       <source url="https://doublew2w.cn/rss.xml">布局</source>
       <description>布局包括: 导航栏 侧边栏 页脚 同时每个页面包含: 路径导航 标题和页面信息 TOC (文章标题列表) 贡献者、更新时间等页面元信息 评论 主题也带有以下元素: 夜间模式按钮 返回顶部按钮 打印按钮 你可以在主题选项和页面的 frontmatter 中自定义它们。</description>
       <category>指南</category>
-      <pubDate>Mon, 01 Jul 2024 08:25:12 GMT</pubDate>
+      <pubDate>Thu, 04 Jul 2024 15:33:54 GMT</pubDate>
       <content:encoded><![CDATA[<p>布局包括:</p>
 <ul>
 <li><a href="https://theme-hope.vuejs.press/zh/guide/layout/navbar.html" target="_blank" rel="noopener noreferrer">导航栏</a></li>
@@ -84,7 +84,7 @@
       <source url="https://doublew2w.cn/rss.xml">Markdown 展示</source>
       <description>VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。 你需要创建并编写 Markdown，以便 VuePress 可以根据文件结构将它们转换为不同的页面。</description>
       <category>使用指南</category>
-      <pubDate>Mon, 01 Jul 2024 08:25:12 GMT</pubDate>
+      <pubDate>Thu, 04 Jul 2024 15:33:54 GMT</pubDate>
       <content:encoded><![CDATA[<p>VuePress 主要从 Markdown 文件生成页面。因此，你可以使用它轻松生成文档或博客站点。</p>
 <p>你需要创建并编写 Markdown，以便 VuePress 可以根据文件结构将它们转换为不同的页面。</p>
 <!-- more -->
