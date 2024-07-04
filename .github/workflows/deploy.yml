@@ -11,8 +11,8 @@ permissions:
 jobs:
   deploy-gh-pages:
     runs-on: ubuntu-latest
-    env:
-      FTP_HOST: ${{ secrets.ftp_host }}
+    # env:
+    #   FTP_HOST: ${{ secrets.ftp_host }}
     environment: master
     steps:
       - name: Checkout
