@@ -1,7 +1,8 @@
 ---
 title: 232-用栈实现队列
 date: 2024-07-01
-tag: [栈]
+tag: 栈
+category: LeetCode
 ---
 
 ## 题目地址(232. 用栈实现队列 - 力扣（LeetCode）)

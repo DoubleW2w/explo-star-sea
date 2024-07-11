@@ -1,7 +1,8 @@
 ---
 title: 151-反转字符串中的单词
 date: 2024-06-30
-tag: [字符串]
+tag: 字符串
+category: LeetCode
 ---
 
 ## 题目地址(151. 反转字符串中的单词 - 力扣（LeetCode）)

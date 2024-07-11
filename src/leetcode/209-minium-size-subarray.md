@@ -1,9 +1,8 @@
 ---
 title: 209-长度最小的子数组
 date: 2024-06-24
-tags:
-    - 数组
-    - 滑动窗口
+tags: [数组,滑动窗口]
+category: LeetCode
 ---
 
 ## 题目地址(209. 长度最小的子数组 - 力扣（LeetCode）)

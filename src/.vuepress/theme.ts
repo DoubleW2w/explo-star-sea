@@ -15,9 +15,8 @@ export default hopeTheme({
   logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
   repo: "DoubleW2w/explo-star-sea",
-
   docsDir: "src",
-
+  docsBranch: "master",
   // 导航栏
   navbar,
 
@@ -29,11 +28,10 @@ export default hopeTheme({
   footer: "默认页脚",
   displayFooter: true,
   // 版权描述
-  copyright: "基于 MIT 协议，© 2019-至今 DoubleW2w",
+  copyright: "基于 MIT 协议，© 2024-至今 DoubleW2w",
   // 加密配置
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
     },
   },
 
@@ -69,6 +67,8 @@ export default hopeTheme({
     // 博客插件
     blog: {
       excerpt: true,
+      excerptLength: 150,
+      hotReload: true
     },
     // 评论插件
     comment: {

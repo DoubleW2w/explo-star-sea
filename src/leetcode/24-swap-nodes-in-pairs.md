@@ -1,7 +1,8 @@
 ---
 title: 24-两两交换链表中的节点
 date: 2024-06-27
-tags:
+tags: [链表]
+category: LeetCode
 ---
 
 ## 题目地址(24. 两两交换链表中的节点 - 力扣（LeetCode）)

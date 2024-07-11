@@ -2,6 +2,7 @@
 title: 20-有效的括号
 date: 2024-07-01
 tag: [字符串,栈]
+category: LeetCode
 ---
 
 ## 题目地址(20. 有效的括号 - 力扣（LeetCode）)

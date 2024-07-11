@@ -1,7 +1,8 @@
 ---
 title: 206-反转链表
 date: 2024-06-26
-tag: [链表]
+tag: 链表
+category: LeetCode
 ---
 
 

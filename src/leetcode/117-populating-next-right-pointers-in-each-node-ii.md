@@ -1,7 +1,8 @@
 ---
 title: 117-填充每个节点的下一个右侧节点指针 II
 date: 2024-07-08
-tag: [二叉树，BFS]
+tag: [二叉树,BFS]
+category: LeetCode
 ---
 
 ## 题目地址(117. 填充每个节点的下一个右侧节点指针 II - 力扣（LeetCode）)
@@ -91,7 +92,7 @@ class Node {
     public Node next;
 
     public Node() {}
-    
+
     public Node(int _val) {
         val = _val;
     }

@@ -1,9 +1,8 @@
 ---
 title: 704-二分查找
 date: 2024-06-22
-tag:
-    - 数组
-    - 二分查找
+tag: [数组,二分查找]
+category: LeetCode
 ---
 
 ## 题目地址(704. 二分查找 - 力扣（LeetCode）)

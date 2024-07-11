@@ -1,7 +1,8 @@
 ---
 title: 199-二叉树的右视图
 date: 2024-07-08
-tag: [二叉树，BFS，DFS]
+tag: [二叉树,BFS,DFS]
+category: LeetCode
 ---
 
 ## 题目地址(199. 二叉树的右视图 - 力扣（LeetCode）)

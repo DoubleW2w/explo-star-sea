@@ -1,8 +1,8 @@
 ---
 title: 27-移除元素
 date: 2024-06-22
-tag:
-    - 数组
+tag: [数组]
+category: LeetCode
 ---
 
 ## 题目地址(27. 移除元素 - 力扣（LeetCode）)

@@ -1,7 +1,8 @@
 ---
 title: 515-在每个树行中找最大值
 date: 2024-07-08
-tag: [二叉树，BFS,DFS]
+tag: [二叉树,BFS,DFS]
+category: LeetCode
 ---
 
 ## 题目地址(515. 在每个树行中找最大值 - 力扣（LeetCode）)

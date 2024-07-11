@@ -1,7 +1,8 @@
 ---
 title: 383-赎金信
 date: 2024-06-28
-tag: [哈希表]
+tag: 哈希表
+category: LeetCode
 ---
 
 

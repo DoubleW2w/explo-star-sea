@@ -7,7 +7,6 @@ export default navbar([
     icon: "fa-solid fa-blog",
     link: "/blogMe",
   },
-  // "/demo/",
   {
     text: "总览",
     icon: "fa-solid fa-list",

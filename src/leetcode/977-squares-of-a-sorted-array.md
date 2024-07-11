@@ -2,9 +2,8 @@
 
 title: 977-有序数组的平方
 date: 2024-06-23
-tag:
-    - 数组
-    - 二分查找
+tag: [数组,二分查找]
+category: LeetCode
 ---
 
 ## 题目地址(977. 有序数组的平方 - 力扣（LeetCode）)

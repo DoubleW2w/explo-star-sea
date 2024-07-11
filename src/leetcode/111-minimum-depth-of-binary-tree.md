@@ -1,7 +1,8 @@
 ---
 title: 111-二叉树的最小深度
 date: 2024-07-08
-tag: [二叉树，DFS]
+tag: [二叉树,DFS]
+category: LeetCode
 ---
 
 ## 题目地址(111. 二叉树的最小深度 - 力扣（LeetCode）)
@@ -58,7 +59,7 @@ https://leetcode.cn/problems/minimum-depth-of-binary-tree/description/
 
 ## 关键点
 
--  
+-
 
 ## 代码
 

@@ -1,7 +1,8 @@
 ---
 title: 344-反转字符串
 date: 2024-06-30
-tag: [字符串,字符串]
+tag: 字符串
+category: LeetCode
 ---
 
 ## 题目地址(344. 反转字符串 - 力扣（LeetCode）)

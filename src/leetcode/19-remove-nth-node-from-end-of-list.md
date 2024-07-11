@@ -2,6 +2,7 @@
 title: 19-删除链表的倒数第N个结点
 date: 2024-06-27
 tag: [链表]
+category: LeetCode
 ---
 
 

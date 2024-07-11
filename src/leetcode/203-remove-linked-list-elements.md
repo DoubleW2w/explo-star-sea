@@ -1,7 +1,8 @@
 ---
 title: 203-移除链表元素
 date: 2024-06-26
-tag: [链表]
+tag: 链表
+category: LeetCode
 ---
 
 
@@ -51,7 +52,7 @@ https://leetcode.cn/problems/remove-linked-list-elements/description/
 
 ## 思路1:直接删除
 
-- 先判断头结点的情况 $head != null \space \&\& \space head.val != val$ 
+- 先判断头结点的情况 $head != null \space \&\& \space head.val != val$
 - 从当前节点的后驱节点进行遍历
 
 ### 关键点

@@ -1,7 +1,8 @@
 ---
-title: 104-二叉树的最大深度 
+title: 104-二叉树的最大深度
 date: 2024-07-08
-tag: [二叉树，]
+tag: [二叉树]
+category: LeetCode
 ---
 
 ## 题目地址(104. 二叉树的最大深度 - 力扣（LeetCode）)

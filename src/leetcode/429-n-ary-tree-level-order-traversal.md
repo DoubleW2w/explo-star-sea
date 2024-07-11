@@ -1,7 +1,8 @@
 ---
 title: 429-N 叉树的层序遍历
 date: 2024-07-08
-tag: [树，BFS，DFS]
+tag: [树,BFS,DFS]
+category: LeetCode
 ---
 
 ## 题目地址(429. N 叉树的层序遍历 - 力扣（LeetCode）)

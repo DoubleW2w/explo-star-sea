@@ -1,7 +1,8 @@
 ---
 title: 1047-删除字符串中的所有相邻重复项
 date: 2024-07-01
-tag: [字符串]
+tag: 字符串
+category: LeetCode
 ---
 
 

@@ -1,9 +1,8 @@
 ---
 title: 59-螺旋矩阵 II
 date: 2024-06-24
-tags:
-    - 数组
-    - 模拟行为
+tags: [数组,模拟行为]
+category: LeetCode
 ---
 
 ## 题目地址(59. 螺旋矩阵 II - 力扣（LeetCode）)

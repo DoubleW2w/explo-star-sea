@@ -1,7 +1,8 @@
 ---
 title: 707-设计链表
 date: 2024-06-26
-tag: [链表]
+tag: 链表
+category: LeetCode
 ---
 
 
@@ -68,7 +69,7 @@ myLinkedList.get(1);              // 返回 3
 
 - 内部定义一个 Node 对象当成链表中的节点
 - 由于需要根据索引来查找节点，因此提供查询节点的方法 `getNode()`
-- 
+-
 
 ### 关键点
 
@@ -222,7 +223,7 @@ class MyLinkedList {
     }
 
     public void addAtHead(int val) {
-        Node node = new Node(val);        
+        Node node = new Node(val);
         node.next = head.next; node.prev = head;
         head.next.prev = node; head.next = node;
         size++;
@@ -237,7 +238,7 @@ class MyLinkedList {
     public void addAtIndex(int index, int val) {
         if (index > sz) return ;
         if (index <= 0) {
-            addAtHead(val); 
+            addAtHead(val);
         } else if (index == sz) {
             addAtTail(val);
         } else {
