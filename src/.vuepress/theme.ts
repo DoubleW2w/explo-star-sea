@@ -25,10 +25,10 @@ export default hopeTheme({
   // 全屏按钮
   fullscreen: true,
   // 页脚
-  footer: "默认页脚",
+  footer: "",
   displayFooter: true,
   // 版权描述
-  copyright: "基于 MIT 协议，© 2024-至今 DoubleW2w",
+  copyright: "VuePress Theme Hope |© 2024 -至今 DoubleW2w | 琼ICP备2024037661号",
   // 加密配置
   encrypt: {
     config: {
@@ -128,39 +128,9 @@ export default hopeTheme({
       tabs: true, // 支持选项卡功能
       tasklist: true, // 启用任务列表功能
       gfm: true,
-      // 在启用之前安装 echarts
       echarts: true,
-
-      // 在启用之前安装 flowchart.ts
-      // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // 在启用之前安装 katex  pnpm add -D katex
-      // 使用 KaTeX 启用 TeX 支持
       katex: true,
 
-      // 在启用之前安装 mathjax-full
-      // mathjax: true,
-
-      // 在启用之前安装 mermaid
-      // mermaid: true,
-
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // 在启用之前安装 reveal.js
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-
-      // 在启用之前安装 @vue/repl
-      // vuePlayground: true,
-
-      // install sandpack-vue3 before enabling it
-      // sandpack: true,
     },
     // 代码高亮插件
     shiki:{
@@ -186,62 +156,5 @@ export default hopeTheme({
       count: 10,
       sorter: (a, b) => Number(b.frontmatter.date) - Number(a.frontmatter.date),
     },
-
-    // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cacheImage: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
   },
 });

@@ -1,7 +1,8 @@
 ---
 title: 关于本站
-icon: circle-info
 article: false  # 不显示在博客文章列表里
+isOriginal: true
+order: 1
 ---
 
 
