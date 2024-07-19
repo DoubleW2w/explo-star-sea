@@ -15,7 +15,7 @@ tag: [Java,ArrayList]
 
 线性
 
-![image-20240715153101753](C:/Users/lyh/AppData/Roaming/Typora/typora-user-images/image-20240715153101753.png)
+![image-20240715153101753](./../.vuepress/public/my-images/image-20240715153101753.png)
 
 通过寻址公式，达到快速访问的目的 $a[i] = baseAddr +i* dataTypeSize$
 
@@ -144,7 +144,7 @@ public ArrayList(Collection<? extends E> c) {
 
 ### 添加操作（第一次扩容）
 
-![image-20240715163257046](C:/Users/lyh/AppData/Roaming/Typora/typora-user-images/image-20240715163257046.png)
+![image-20240715163257046](./../.vuepress/public/my-images/image-20240715163257046.png)
 
 当执行下面两行代码时
 
@@ -217,7 +217,7 @@ private void grow(int minCapacity) {
 
 最后在将元素放进数组中。
 
-![New Excalidarw](C:/Users/lyh/AppData/Roaming/Typora/typora-user-images/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%89%A9%E5%AE%B9.png)
+![New Excalidarw](./../.vuepress/public/my-images/arraylist-first-grow.png)
 
 ### 添加操作（第二次扩容）
 
