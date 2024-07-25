@@ -4,7 +4,7 @@ home: true
 layout: BlogHome
 title: 主页
 icon: fa-solid fa-house-crack
-#heroImage: /logo.svg
+
 heroText: DoubleW2w
 tagline: 游龙当归海，海不迎我自来也
 bgImage: "/assets/image/blog-bg-image.webp"

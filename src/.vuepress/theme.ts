@@ -12,8 +12,6 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
   repo: "DoubleW2w/explo-star-sea",
   docsDir: "src",
   docsBranch: "master",
@@ -28,7 +26,7 @@ export default hopeTheme({
   footer: "",
   displayFooter: true,
   // 版权描述
-  copyright: "VuePress Theme Hope |© 2024 -至今 DoubleW2w | 琼ICP备2024037661号",
+  copyright: "<a href=\"https://theme-hope.vuejs.press/zh/\">VuePress Theme Hope</a>  | © 2024 -至今 <a href=\"https://doublew2w.cn\">DoubleW2w</a>  | <a href=\"https://beian.miit.gov.cn/#/Integrated/index\">琼ICP备2024037661号</a> ",
   // 加密配置
   encrypt: {
     config: {
@@ -147,7 +145,7 @@ export default hopeTheme({
     },
     // 搜索插件
     searchPro:{
-      indexContent:true,
+      indexContent:false,
     },
     feed: {
       atom: true,
