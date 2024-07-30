@@ -17,6 +17,10 @@ export default navbar([
       {
         text: "设计模式",
         link: "/design-pattern/",
+      },
+      {
+        text:"其他",
+        link:"/other/"
       }
     ],
   },

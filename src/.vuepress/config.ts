@@ -8,8 +8,7 @@ export default defineUserConfig({
   lang: "zh-CN",
   // 网站标题
   title: "DoubleW2w",
-  description:
-    "大道至简，知易行难",
+  description: "大道至简，知易行难",
   theme,
 
   // 是否开启页面预拉取，如果服务器宽带足够，可改为 true，会提升其他页面加载速度

@@ -49,7 +49,7 @@ export default hopeTheme({
     name: "DoubleW2w", // 博主姓名
     avatar: "/assets/image/blog-avatar.jpg",
     description: "游龙当归海，海不迎我自来也",
-    intro: "/about/aboutMe",
+    // intro: "/about/aboutMe", 个人介绍页
     medias: {
       Steam: "https://steamcommunity.com/id/snymdgd/",
       GitHub: "https://github.com/DoubleW2w",

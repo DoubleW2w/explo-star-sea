@@ -4,4 +4,5 @@ export default sidebar({
   "/about/": "structure",
   "/leetcode/": "structure",
   "/design-pattern/": "structure",
+  "/other/":"structure"
 });
