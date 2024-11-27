@@ -3,4 +3,6 @@ title: %filename%
 date: %yyyy%-%mm%-%dd%
 category:
 tags: [tag1, tag2]
+# isOriginal: true/false  当前文章是否为原创
+# sticky: boolean | number 是否标为星标文章。当填入数字时，数字越大，排名越靠前。
 ---
