@@ -13,4 +13,6 @@ export default defineUserConfig({
 
   // 是否开启页面预拉取，如果服务器宽带足够，可改为 true，会提升其他页面加载速度
   shouldPrefetch: true,
+  // 禁止文件夹生成静态文件，参考 [VuePress 文档]（https://v2.vuepress.vuejs.org/zh/guide/page.html#routing）
+  pagePatterns: ["**/*.md", "!_temp", "!.vuepress", "!node_modules"],
 });
