@@ -26,11 +26,11 @@ export default hopeTheme({
   footer: "",
   displayFooter: true,
   // 版权描述
-  copyright: "<a href=\"https://theme-hope.vuejs.press/zh/\">VuePress Theme Hope</a>  | © 2024 -至今 <a href=\"https://doublew2w.cn\">DoubleW2w</a>  | <a href=\"https://beian.miit.gov.cn/#/Integrated/index\">琼ICP备2024037661号</a> ",
+  copyright:
+    '<a href="https://theme-hope.vuejs.press/zh/">VuePress Theme Hope</a>  | © 2024 -至今 <a href="https://doublew2w.cn">DoubleW2w</a>  | <a href="https://beian.miit.gov.cn/#/Integrated/index">琼ICP备2024037661号</a> ',
   // 加密配置
   encrypt: {
-    config: {
-    },
+    config: {},
   },
 
   // 多语言配置
@@ -66,7 +66,7 @@ export default hopeTheme({
     blog: {
       excerpt: true,
       excerptLength: 150,
-      hotReload: true
+      hotReload: true,
     },
     // 评论插件
     comment: {
@@ -75,11 +75,11 @@ export default hopeTheme({
       repoId: "R_kgDOMNjC-Q",
       category: "Announcements",
       categoryId: "DIC_kwDOMNjC-c4CgWGU",
-      mapping:"pathname",
+      mapping: "pathname",
       strict: true,
-      lazyLoading:true,
-      reactionsEnabled:true,
-      inputPosition:"top"
+      lazyLoading: true,
+      reactionsEnabled: true,
+      inputPosition: "top",
     },
 
     components: {
@@ -91,7 +91,7 @@ export default hopeTheme({
       //
       revealJs: {
         themes: ["solarized"],
-        plugins:["highlight","zoom","notes"]
+        plugins: ["highlight", "zoom", "notes"],
       },
       /* ------------------ 样式化 -------------------------------------- */
       alert: true, // 启用 GFM 警告
@@ -128,24 +128,38 @@ export default hopeTheme({
       gfm: true,
       echarts: true,
       katex: true,
-
     },
     // 代码高亮插件
-    shiki:{
-      langs:[
-        'java','javascript','typescript','markdown','html','lua','c',
-        'ansi','js','ts','vue','vue-html','bash','nginx','css','py','python'
+    shiki: {
+      langs: [
+        "java",
+        "javascript",
+        "typescript",
+        "markdown",
+        "html",
+        "lua",
+        "c",
+        "ansi",
+        "js",
+        "ts",
+        "vue",
+        "vue-html",
+        "bash",
+        "nginx",
+        "css",
+        "py",
+        "python",
       ],
       themes: {
         light: "github-light",
         dark: "one-dark-pro",
       },
-      notationDiff:true,
-      notationHighlight:true,
+      notationDiff: true,
+      notationHighlight: true,
     },
     // 搜索插件
-    searchPro:{
-      indexContent:false,
+    searchPro: {
+      indexContent: false,
     },
     feed: {
       atom: true,
