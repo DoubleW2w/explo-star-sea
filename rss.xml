@@ -6,8 +6,8 @@
     <link>https://doublew2w.cn/</link>
     <description>大道至简，知易行难</description>
     <language>zh-CN</language>
-    <pubDate>Wed, 27 Nov 2024 16:19:05 GMT</pubDate>
-    <lastBuildDate>Wed, 27 Nov 2024 16:19:05 GMT</lastBuildDate>
+    <pubDate>Sat, 30 Nov 2024 16:12:18 GMT</pubDate>
+    <lastBuildDate>Sat, 30 Nov 2024 16:12:18 GMT</lastBuildDate>
     <generator>@vuepress/plugin-feed</generator>
     <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
     <category>LeetCode</category>
@@ -166,6 +166,59 @@
 |</p>
 ]]></content:encoded>
       <enclosure url="https://doublew2w-note-resource.oss-cn-hangzhou.aliyuncs.com/img/image-20241127211752474.png" type="image/png"/>
+    </item>
+    <item>
+      <title>缓存一致性的解决方案</title>
+      <link>https://doublew2w.cn/other/%E7%BC%93%E5%AD%98%E4%B8%80%E8%87%B4%E6%80%A7%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</link>
+      <guid>https://doublew2w.cn/other/%E7%BC%93%E5%AD%98%E4%B8%80%E8%87%B4%E6%80%A7%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88.html</guid>
+      <source url="https://doublew2w.cn/rss.xml">缓存一致性的解决方案</source>
+      <description>文章内容来自： 浅谈缓存最终一致性的解决方案 浅谈缓存一致性 引入 持久化层和缓存层的一致性问题也通常被称为双写一致性问题。对于一致性来说，有强一致性和弱一致性。 强一致性保证写入后立即可以读取。 弱一致性则不保证立即可以读取写入后的值，而是尽可能的保证在经过一定时间后可以读取到。 在弱一致性中应用最为广泛的模型则是「最终一致性模型」，即保证在一定时间...</description>
+      <pubDate>Fri, 02 Aug 2024 00:00:00 GMT</pubDate>
+      <content:encoded><![CDATA[<blockquote>
+<p>文章内容来自：</p>
+<ul>
+<li>
+<p><a href="https://mp.weixin.qq.com/s?__biz=MjM5ODYwMjI2MA==&amp;mid=2649766984&amp;idx=1&amp;sn=fb6dcafedc845584049c56ba6fedc13c&amp;scene=21#wechat_redirect" target="_blank" rel="noopener noreferrer">浅谈缓存最终一致性的解决方案</a></p>
+</li>
+<li>
+<p><a href="https://mp.weixin.qq.com/s/VprIIqJ4wdqMiXY8LRXAJA" target="_blank" rel="noopener noreferrer">浅谈缓存一致性</a></p>
+</li>
+</ul>
+</blockquote>
+<h2>引入</h2>
+<p>持久化层和缓存层的一致性问题也通常被称为双写一致性问题。对于一致性来说，有强一致性和弱一致性。</p>
+<ul>
+<li>强一致性保证写入后立即可以读取。</li>
+<li>弱一致性则不保证立即可以读取写入后的值，而是尽可能的保证在<strong>经过一定时间后</strong>可以读取到。</li>
+</ul>
+<p>在弱一致性中应用最为广泛的模型则是「最终一致性模型」，即保证在一定时间之后写入和读取达到一致的状态。</p>
+<h2>旁路缓存模式（Cache-Aside）</h2>
+<p><strong>Cache-Aside 旁路缓存模式</strong>，是应用最为广泛的一种缓存策略。</p>
+<ul>
+<li>
+<p><strong>在读请求中</strong>，首先请求缓存，若缓存命中（cache hit），则直接返回缓存中的数据；若缓存未命中（cache miss），则查询数据库并将查询结果更新至缓存，然后返回查询出的数据（demand-filled look-aside）。</p>
+</li>
+<li>
+<p><strong>在写请求中</strong>，先更新数据库，再删除缓存（write-invalidate）。</p>
+</li>
+</ul>
+<p></p>
+<h3>为什么删除缓存，而不是更新缓存</h3>
+<ul>
+<li>在写操作中，当该缓存对应的结果需要消耗大量的计算过程才能得到时，更新缓存会是一笔不小的开销。</li>
+<li>当写操作较多时，可能也会存在<strong>刚更新的缓存还没有被读取到，又再次被更新</strong>的情况。</li>
+<li>删除缓存的操作不仅是幂等的，可以在发生异常时重试，而且<strong>写-删除</strong>和<strong>读-更新</strong>在语义上更加对称。</li>
+</ul>
+<p>在并发场景下，<strong>在写请求中更新缓存可能会引发数据的不一致问题</strong>：有两个线程去更新同一个数值，线程 A 把数据更新为 1，线程 B 把数据更新为 2，我们期望的结果是以下两种情况之一：</p>
+<ol>
+<li>「数据库」里的数据是 1 且「缓存」里的数据也是 1；</li>
+<li>「数据库」里的数据是 2 且「缓存」里的数据也是 2；</li>
+</ol>
+<p>模拟并发写场景：</p>
+<p></p>
+<p>| <strong>时刻</strong> | <strong>线程A（写）</strong> | <strong>线程B（写）</strong> |<br>
+|</p>
+]]></content:encoded>
     </item>
     <item>
       <title>GitHub Action 入门</title>
@@ -1341,100 +1394,6 @@
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">	}</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">}</span></span></code></pre>
 <div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded>
-    </item>
-    <item>
-      <title>700-二叉搜索树中的搜索</title>
-      <link>https://doublew2w.cn/leetcode/700-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2.html</link>
-      <guid>https://doublew2w.cn/leetcode/700-%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91%E4%B8%AD%E7%9A%84%E6%90%9C%E7%B4%A2.html</guid>
-      <source url="https://doublew2w.cn/rss.xml">700-二叉搜索树中的搜索</source>
-      <description>题目地址(700. 二叉搜索树中的搜索 - 力扣（LeetCode）) https://leetcode.cn/problems/search-in-a-binary-search-tree/submissions/550317560/ 题目描述 给定二叉搜索树（BST）的根节点 root 和一个整数值 val 。 你需要在 BST 中找到节点值等于 ...</description>
-      <category>LeetCode</category>
-      <pubDate>Sun, 28 Jul 2024 00:00:00 GMT</pubDate>
-      <content:encoded><![CDATA[<h2>题目地址(700. 二叉搜索树中的搜索 - 力扣（LeetCode）)</h2>
-<p><a href="https://leetcode.cn/problems/search-in-a-binary-search-tree/submissions/550317560/" target="_blank" rel="noopener noreferrer">https://leetcode.cn/problems/search-in-a-binary-search-tree/submissions/550317560/</a></p>
-<h2>题目描述</h2>
-<p> 给定二叉搜索树（BST）的根节点 <meta charset="UTF-8">&nbsp; <code> root </code>&nbsp; 和一个整数值 <meta charset="UTF-8">&nbsp; <code> val </code>。</p>
-<p> 你需要在 BST 中找到节点值等于&nbsp; <code> val </code>&nbsp; 的节点。 返回以该节点为根的子树。 如果节点不存在，则返回 <meta charset="UTF-8">&nbsp; <code> null </code>&nbsp;。</p>
-<p>&nbsp; </p>
-<p> <strong> 示例 1: </strong> </p>
-<p> <img alt="" src="https://assets.leetcode.com/uploads/2021/01/12/tree1.jpg" style="height: 179px; width: 250px;"> <meta charset="UTF-8"> </p>
-<pre> <b> 输入：</b> root = [4,2,7,1,3], val = 2
-<b> 输出：</b> [2,1,3]
-</pre>
-<p> <strong> 示例 2: </strong> </p>
-<img alt="" src="https://assets.leetcode.com/uploads/2021/01/12/tree2.jpg" style="height: 179px; width: 250px;">
-<pre> <b> 输入：</b> root = [4,2,7,1,3], val = 5
-<b> 输出：</b> []
-</pre>
-<p>&nbsp; </p>
-<p> <strong> 提示：</strong> </p>
-<ul>
-	<li> 树中节点数在&nbsp; <code> [1, 5000] </code>&nbsp; 范围内 </li>
-	<li> <code> 1 &lt;= Node.val &lt;= 10 <sup> 7 </sup> </code> </li>
-	<li> <code> root </code>&nbsp; 是二叉搜索树 </li>
-	<li> <code> 1 &lt;= val &lt;= 10 <sup> 7 </sup> </code> </li>
-</ul>
-<h2>思路：中序遍历</h2>
-<p>对于一棵二叉搜索树来说，中序遍历的结果是一个单调递增的数组。</p>
-<p>递归函数定义：</p>
-<ol>
-<li>返回值是树的节点，参数是树 root 和目标值 target</li>
-</ol>
-<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">public</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> TreeNode</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> searchBST</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">TreeNode</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> root</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">,</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> int</span><span style="--shiki-light:#24292E;--shiki-dark:#E06C75"> val)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="2">
-<li>递归终止条件：如果树为空，直接返回 null，如果搜索到叶子节点还没找到，也返回 null</li>
-<li>递归函数逻辑
-<ol>
-<li>如果当前节点比 val 小 <code>root.val &lt; val</code>，说明要往 root 的右子树搜索</li>
-<li>如果当前节点比 val 大 <code>root.val &gt; val</code>，说明要往 root 的左子树搜索</li>
-<li>否则就是当前节点</li>
-</ol>
-</li>
-</ol>
-<h2>关键点</h2>
-<ul>
-<li>抓住二叉搜索树的特性</li>
-<li>左子树的节点都比根节点小</li>
-<li>右子树的节点都比根节点大</li>
-<li>并且左右子树都是二叉搜索树</li>
-</ul>
-<h2>代码</h2>
-<ul>
-<li>语言支持：Java</li>
-</ul>
-<p>Java Code:</p>
-<div class="language-java line-numbers-mode" data-highlighter="shiki" data-ext="java" data-title="java" style="--shiki-light:#24292e;--shiki-dark:#abb2bf;--shiki-light-bg:#fff;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes github-light one-dark-pro vp-code"><code><span class="line"></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic">/**</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * Definition for a binary tree node.</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * public class TreeNode {</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * int val;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * TreeNode left;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * TreeNode right;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * TreeNode() {}</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * TreeNode(int val) { this.val = val; }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * TreeNode(int val, TreeNode left, TreeNode right) {</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * this.val = val;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * this.left = left;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * this.right = right;</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> * }</span></span>
-<span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#7F848E;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> */</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">class</span><span style="--shiki-light:#6F42C1;--shiki-dark:#E5C07B"> Solution</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">    public</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> TreeNode</span><span style="--shiki-light:#6F42C1;--shiki-dark:#61AFEF"> searchBST</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">TreeNode</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> root</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">, </span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">int</span><span style="--shiki-light:#E36209;--shiki-dark:#E06C75;--shiki-light-font-style:inherit;--shiki-dark-font-style:italic"> val</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> {</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        while</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (root </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">!=</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">)</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (val </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&lt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> root</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">val</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) root </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> root</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">left</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            else</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> if</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> (val </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> root</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">val</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">) root </span><span style="--shiki-light:#D73A49;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B"> root</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#24292E;--shiki-dark:#E5C07B">right</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">            else</span><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD"> return</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF"> root;</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#C678DD">        return</span><span style="--shiki-light:#005CC5;--shiki-dark:#D19A66"> null</span><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">;</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">    }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#ABB2BF">}</span></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p><strong>复杂度分析</strong></p>
-<p>令 n 为节点个数。</p>
-<ul>
-<li>时间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>，遍历的节点个数</li>
-<li>空间复杂度：<span v-pre="" class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span>，最坏情况下递归需要 O(n) 的栈空间。</li>
-</ul>
-]]></content:encoded>
     </item>
   </channel>
 </rss>
